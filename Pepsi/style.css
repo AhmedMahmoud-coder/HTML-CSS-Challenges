@@ -1,0 +1,118 @@
+*{
+    margin: 10px 12px;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background: rgb(3, 120, 255);
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    
+    /* overflow-x: hidden;*/
+   
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+
+}
+.logo img{
+   height: 50px;
+}
+ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+  
+}
+ ul li {
+    display: inline-block;
+    margin: 25px;
+   
+}
+ul li a{
+    text-decoration: none;
+    padding: 10px 15px;
+    color: white;
+    font-size: 19px;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+ul li a:hover{
+     color: #fff;
+  background-color: transparent;
+ 
+  box-shadow: 0;
+  transform: translateY(-4px) scale(1.05); 
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
+
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    height: 400px;;
+    
+}
+.content .text{
+  
+   margin: auto;
+}
+.content .text h2{
+   letter-spacing: .5px;
+     font-size: 40px;
+  font-weight: 900;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  color: white;
+  
+}
+.content .text h2 span{
+    
+    color: white;
+     font-size: 70px;
+     text-transform: uppercase;
+}
+.content .text p{
+    width: 50%;
+  line-height: 1.4;
+  font-size: 19px;
+  color:rgba(255, 255, 255, 0.8);
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+.content .image img{
+    height: 400px;
+   
+}
+.content .text a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    border-radius: 30px;
+    background: white;
+   text-transform: uppercase;
+    padding: 10px 15px;
+     transition: all 0.2s;
+}
+.content .text a:hover{
+     color: #fff;
+  background-color: transparent;
+  border: 1px solid #fff;
+  box-shadow: 0;
+  transform: translateY(-4px) scale(1.05); 
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
+
+}
+footer{
+    margin-top: 40px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer img{
+
+    height: 50px;
+}
