@@ -63,11 +63,12 @@ button {
   filter: brightness(0.9);
 }
 
-.clear {
+.clear,
+.clearall {
   background-color: #ff6b6b;
   color: white;
 }
-.operator {
+.operator,#equal {
   background-color: #764ba2;
   color: white;
 }
