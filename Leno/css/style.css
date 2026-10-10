@@ -8,6 +8,15 @@
   --main-duration: 0.5s;
 }
 
+*,
+*::before,
+*::after {
+  transition:
+    background-color 0.4s ease,
+    color 0.4s ease,
+    border-color 0.4s ease;
+}
+
 body {
   font-family: "Work Sans", sans-serif;
 }
@@ -46,7 +55,12 @@ header div img {
   text-decoration: none;
   color: var(--secondary-color);
 }
+.lin-mo{
+  display: flex;
+  
+}
 header .links {
+  padding-right: 15px;
   position: relative;
 }
 .links ul li {
@@ -117,12 +131,27 @@ header .links {
   width: 100%;
 }
 
+#moon {
+  display: inline;
+  cursor: pointer; 
+  font-size: 22px; 
+  color: #333;
+  margin-left: 20px; 
+  display: flex;
+  align-items: center;
+  transition: 0.3s ease; 
+}
+
+#moon:hover {
+  color: var(--main-color); 
+}
+
 /*----- End Heading -----*/
 
 /* -- Start Landing Section -- */
 
 main .landing {
-  background: url(images/landing.jpg) center center/cover no-repeat;
+  background: url(../images/landing.jpg) center center/cover no-repeat;
   height: calc(100vh - 64px);
   position: relative;
 }
@@ -471,7 +500,6 @@ main .landing .text p {
   padding-top: var(--section-padding);
   padding-bottom: var(--section-padding);
   text-align: center;
-
 }
 
 .contact .container .content .label {
@@ -482,7 +510,7 @@ main .landing .text p {
   margin-bottom: 15px;
 }
 
-.contact .container .content> a:first-of-type {
+.contact .container .content > a:first-of-type {
   display: block;
   font-size: 35px;
   font-weight: 800;
@@ -496,15 +524,14 @@ main .landing .text p {
   font-size: 19px;
   display: flex;
   justify-content: center;
-
 }
- .social i {
+.social i {
+  font-size: 21px;
   margin-left: 10px;
   color: var(--secondary-color);
-  transition: all .1s ease-in;
+  transition: all 0.1s ease-in;
 }
 .social i:hover {
- 
   color: rgba(39, 110, 224, 0.86);
 }
 
